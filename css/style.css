@@ -2917,7 +2917,7 @@ body.oh {
 .chk-container.chk-serenade > .chk-item:after {
   color: #fff1e2;
 }
-.chk-container.chk-serenade:hover > .chk-item1{
+/*.chk-container.chk-serenade:hover > .chk-item1{
   background-color: #fff1e291;
 position: absolute;
 top: 161px;
@@ -2926,7 +2926,7 @@ height: 204.83px;
 border-radius: 50%;
 padding-top: 50px;
 display: block;
-}
+}*/
 
 .chk-serenade h3.conference-title {
 
@@ -2959,7 +2959,7 @@ margin: 0 25px;
 
     max-width: 300px;
     border-radius: 50%;
-    display: none ;
+    display: block ;
 
 }
 
