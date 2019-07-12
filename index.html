@@ -1,247 +1,319 @@
+<!DOCTYPE html>
 <html>
-<head><meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="style/main.css">
-	<link href="style/menu.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="style/profiles.css">
-	<link rel="stylesheet" href="style/font-awesome.min.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>The Conference Template :: Pixeden</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/prism/prism.css">
+    <link rel="stylesheet" href="css/pe-slider.css">
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="fonts/pe-icon-social/css/pe-icon-social.css">
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css">
+    <link rel="stylesheet" href="fonts/pe-icon-social/css/social-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="loading">
+      <svg viewBox="0 0 19 32" class="loader">
+        <path d="M15.947 10.080v-6.347h2.72v-1.067h-18.667v1.067h2.667v6.347c0 1.76 0.693 3.893 5.387 6.187-4 1.92-5.387 3.627-5.387 6.453v5.547h-2.667v1.067h18.667v-1.067h-2.72v-5.547c0-2.827-1.387-4.533-5.387-6.507 4.693-2.24 5.387-4.373 5.387-6.133zM14.88 22.72v5.547h-11.147v-5.547c0-2.24 0.907-3.787 5.6-5.92 4.64 2.187 5.547 3.733 5.547 5.92zM9.28 15.68c-4.907-2.24-5.547-4.107-5.547-5.6v-6.347h11.147v6.347c0 1.493-0.693 3.36-5.6 5.6z"></path>
+      </svg>
+    </div>
+    <header id="home" class="section-terracotta conference-showcase fixed-nav-start section pt0 pb0">
+      <section  class="sTop section section-background conference-showcase max-width-1600">
+        <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <ul class="nav nav-pills pull-right conference-navigation margin-top-35">
+              <li role="presentation" class="active"><a href="#home">Home</a></li>
+              <li role="presentation"><a href="#about">about</a></li>
+              <li role="presentation"><a href="#speakers">Speakers</a></li>
+              <li role="presentation"><a href="#schedule">schedule</a></li>
+              <li role="presentation"><a href="#sponsors">Sponsors</a></li>
+              <li role="presentation"><a href="#contacts">contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button type="button" role="button" aria-label="Toggle Navigation" class="nav-btn"><span class="lines"></span></button>
+        <div class="container-fluid">
+          <div class="showcase-container">
+            <div class="home_img " >
+      <img src="images/logo.png" alt="logo"></div>
+    <div class="home_text ">
+      <div class="home_header"><span class="bold">KOTLIN / Everywhere</span> Minsk</div>
+      <div class="home_desc"><span class="yellow">7 september</span> 2019  Minsk</div>
+      <div class="home_img_partners" >
+      <img src="images/bkug.png" alt="logo">
+    <img src="images/gdg.jpg" alt="logo"></div>
+    </div>
+      <p><a href="#s1" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
+  </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section id="about" class="section conference-intro">
+      <div class="container text-center">
+        <h3 class="conference-title"><i class="pe-7s-micro"></i>about</h3>
+        <p class="compact">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies condimentum tristique. Sed quis urna velit. Aliquam suscipit dapibus molestie. Nam auctor, risus et varius dapibus, lorem leo dapibus nulla, id elementum tellus purus vitae augue.</p>
+      </div>
+    </section>
+    <section id="speakers" class="section conference-speakers text-center pt0">
+      <div class="chk-container">
+      	<div class="chk-container chk-serenade">
+        <div class="chk-item"><img src="images/profile _1.jpg" alt="Leonid Starcev" class="chk-full"></div>
+        <div class="chk-item1">
+          <div class="checker-content">
+            <h3 class="conference-title">Leonid Starcev</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. Maecenas porta orci a lorem fermentum.</p>
+            <ul class="pe-social">
+              <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+        <div class="chk-container chk-serenade">
+          <div class="chk-item"><img src="images/profile_2.png" alt="Ilmir Usmanov" class="chk-full"></div>
+          <div class="chk-item1">
+            <div class="checker-content">
+              <h3 class="conference-title">Ilmir Usmanov</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae metus ligula.
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-serenade">
+          <div class="chk-item"><img src="images/profile_3.jpg" alt="Marcin Moskala" class="chk-full"></div>
+          <div class="chk-item1">
+            <div class="checker-content">
+              <h3 class="conference-title">Marcin Moskala</h3>
+              <p>Aenean pharetra adipiscing sem non ornare. Duis at dui turpis. Quisque in accumsan.
+                <ul class="pe-social">
+                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-inverse chk-serenade">
+          <div class="chk-item"><img src="images/profile_4.jpg" alt="Marharyta Nedzelska" class="chk-full"></div>
+          <div class="chk-item1">
+            <div class="checker-content">
+              <h3 class="conference-title">Marharyta Nedzelska</h3>
+              <p>Phasellus rutrum est interdum tincidunt commodo. Donec vel dignissim orci.</p>
+              <ul class="pe-social">
+                <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="chk-container chk-inverse chk-serenade">
+          <div class="chk-item"><img src="images/profile_5.jpg" alt="Oleg Semen" class="chk-full"></div>
+          <div class="chk-item1">
+            <div class="checker-content">
+              <h3 class="conference-title">Oleg Semen</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris.</p>
+              <ul class="pe-social">
+                <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="schedule" class="section conference-agenda">
+      <div class="container text-center">
+        <h3 class="conference-title"><i class="pe-7s-alarm"></i>schedule<span class="subtitle">Conference schedule</span></h3>
+        <h2 class="conference-title">Minsk • 07 september 2019<br>mesto</h2>
+        <ul class="timeline">
+          <li><span class="timeline-time">8:00 AM</span>
+            <div class="timeline-content">
+              <h4>Check In</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">8:30 AM</span>
+            <div class="timeline-content">
+              <h4>Breakfast / Coffee</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">9:00AM - 12:00 AM</span>
+            <div class="timeline-content">
+              <h4>Pre-Conference Trainings</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">12:30 PM - 1:30 PM</span>
+            <div class="timeline-content">
+              <h4>Lunch</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">1:30 PM - 5:30 PM</span>
+            <div class="timeline-content">
+              <h4>Pre-Conference Trainings</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">5:00 PM</span>
+            <div class="timeline-content">
+              <h4>City tour & Activities</h4>
+            </div>
+          </li>
+          <li class="timeline-featured"><span class="timeline-time">6:00 PM - 9:00 PM</span>
+            <div class="timeline-content">
+              <h4><i class="pe-7s-id pe-va"></i>The Conference talks</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </div>
+          </li>
+          <li><span class="timeline-time">9:00 PM</span>
+            <div class="timeline-content">
+              <h4>Welcome Dinner</h4>
+            </div>
+          </li>
+          <li><span class="timeline-time">7:30 PM - 9:00 PM</span>
+            <div class="timeline-content">
+              <h4>Sponsors Reception</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="sponsors" class="section conference-sponsor">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script	src="js/jquery.smint.js" type="text/javascript" ></script>
-
-<script type="text/javascript">
-$(document).ready( function() {
-    $('.subMenu').smint({
-        'scrollSpeed'           : 500,
-        'mySelector'            : 'div',
-        'lastSectionBigEnough'  : 0 // 1 = big enough to trigger activ on scroll, 0 = not big enough, active is triggerd after reaching the bottom
-    });
-});
-
-
-$(window).on('beforeunload', function() {
-    $(window).scrollTop(0); 
-});
-
-</script>
-
-
-</head>
-<body>
-	
-	<div class="subMenu" >
-	 	<div class="inner">
-	 		<a href="#sTop" class="subNavBtn">Home</a>
-	 		<a href="#s1" class="subNavBtn">speakers</a> 
-			<a href="#s2" class="subNavBtn">partners</a>
-			<a href="#s3" class="subNavBtn">tickets</a>
-			<a href="#s4" class="subNavBtn">contacts</a>
-		</div></div>
-<div class="section Home sTop">
-		<div class="home_img " >
-			<img src="images/logo.png" alt="logo"></div>
-		<div class="home_text ">
-			<div class="home_header"><span class="bold">KOTLIN / Everywhere</span> Minsk</div>
-			<div class="home_desc"><span class="yellow">7 september</span> 2019  Minsk</div>
-			<div class="home_img_partners" >
-			<img src="images/bkug.png" alt="logo">
-		<img src="images/gdg.jpg" alt="logo"></div>
-		</div>
-			
-		
-		
-
-			<p><a href="#s1" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
-	</div>
-
-	<div id="s1" class="section speakers s1">
-		<h2 class="section_header">our speakers</h2>
-		<div id="data-container">
-		<div class="img-wrapper profile_1">
-			<img src="images/profile _1.jpg" alt="Leonid Starcev">
-			<div class="profile_desc"><h2>Leonid Starcev</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_2">
-			<img src="images/profile_2.png" alt="Leonid Starcev">
-			
-			<div class="profile_desc"><h2>Ilmir Usmanov</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_3">
-			<img src="images/profile_3.jpg" alt="Leonid Starcev">
-			
-			<div class="profile_desc"><h2>Marcin Moskala</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_4">
-			<img src="images/profile_4.jpg" alt="Leonid Starcev">
-
-			<div class="profile_desc"><h2>Marharyta Nedzelska</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-        
-        
-
-		<div id="box" style="display:none;" >
-			<div class="img-wrapper profile_5">
-			<img src="images/profile_5.jpg" alt="Leonid Starcev">
-		
-			<div class="profile_desc"><h2>Oleg Semen</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div></div>
-                <div class="img-wrapper profile_6">
-			<img src="images/profile_5.jpg" alt="Leonid Starcev">
-			
-			<div class="profile_desc"><h2>Leonid Starcev</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_7">
-			<img src="images/profile_2.png" alt="Leonid Starcev">
-	
-			<div class="profile_desc"><h2>Ilmir Usmanov</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_8">
-			<img src="images/profile_3.jpg" alt="Leonid Starcev">
-		
-			<div class="profile_desc"><h2>Marcin Moskala</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div>
-		</div>
-		<div class="img-wrapper profile_9">
-			<img src="images/profile_4.jpg" alt="Leonid Starcev">
-	
-			<div class="profile_desc"><h2>Marharyta Nedzelska</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul></div></div>
-            
-</div></div>
-		<button>Load more items</button>
-	
-	<p><a href="#s2" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
+      <div class="container text-center">
+        <h3 class="conference-title"><i class="pe-7s-ribbon"></i>Sponsors<span class="subtitle">The Conference Partners</span></h3>
+           <div class="link-sponsors">
+           	<a href="google.com"><img src="images/bkug.png" alt="logo" class="img-responsive margin-center"></a>
+           	<a href="google.com"><img src="images/gdg.jpg" alt="logo" class="img-responsive margin-center"></a>
+ </div>
+      </div>
+    </section>
+    <header id="contacts" class="section conference-venue section-background pe-fixed">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center row-contact">
+									<div class="col-md-6 contact-img">
+											<img src="images/profile _1.jpg" alt="">
+										</div>
+										<div class="col-md-6 contact-info no-padding">
+											<h6 class="text-uppercase">speaker 01</h6>
+											<h1 class="text-white">Essie Ballard</h1>
+											<p>
+												Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
+											</p>
+											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+											<ul>
+												<a href="google.com"><i class="fa fa-facebook"></i></a>
+												<a href="google.com"><i class="fa fa-twitter"></i></a>
+												<a href="google.com"><i class="fa fa-behance"></i></a>
+												<a href="google.com"><i class="fa fa-telegram"></i></a>
+											</ul>
+										</div>
 </div>
+	<div class="col-md-6 col-md-offset-3 text-center row-contact">
+									<div class="col-md-6 contact-img">
+											<img src="images/profile _1.jpg" alt="">
+										</div>
+										<div class="col-md-6 contact-info no-padding">
+											<h6 class="text-uppercase">speaker 01</h6>
+											<h1 class="text-white">Essie Ballard</h1>
+											<p>
+												Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances.
+											</p>
+											<p><span class="lnr lnr-phone-handset"></span>+880 (012) 8954 253</p>
+											<p><span class="lnr lnr-location"></span>iamspeaker@gmail.com</p>
+											<ul>
+												<a href="google.com"><i class="fa fa-facebook"></i></a>
+												<a href="google.com"><i class="fa fa-twitter"></i></a>
+												<a href="google.com"><i class="fa fa-telegram"></i></a>
+												<a href="google.com"><i class="fa fa-behance"></i></a>
+											</ul>
+										</div>
+</div>
+</div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-
-
-	<div id="s2" class="section partners s2">
-
-		<h2 class="section_header">our partners</h2>
-	<p><a href="#s3" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
-	</div>
-
-
-	<div id="s3"	 class="section tickets s3">
-		<h2 class="section_header">our partners</h2>
-	<p><a href="#s4" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
-	</div>
-
-
-	<div id="s4" class="section contacts s4">
-
-		<h2 class="section_header">contacts</h2>
-<div class="contacts_items">
-		<div class="contact_item">
-			<img src="images/profile_3.jpg" alt="Leonid Starcev">
-		
-			<h2>Marcin Moskala</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul>
-	</div>
-<div class="contact_item">
-			<img src="images/profile_2.png" alt="Leonid Starcev">
-		
-			<h2>Marcin Moskala</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul>
-	</div>
-	<div class="contact_item">
-			<img src="images/profile_3.jpg" alt="Leonid Starcev">
-		
-			<h2>Marcin Moskala</h2>
-			<ul>
-				<li><span class="bold">email: </span> example@gmail.com
-</li>
-				<li><span class="bold">telegram: </span>https://t.me/example</span>
-</li>
-				<li><span class="bold">phone: </span>+ 375 29 123 45 67</li>
-			</ul>
-	</div></div></div>
-<script>
-$( 'button' ).click(function() {
-	$('#box').fadeIn();
-  if ( $( "#box" ).fadeIn() ) {
-    $( "#box" ).show( "slow" );
-    $('button').css({"display":"none"})
-    $('#data-container').css({"display":"block"})
-  } else {
-    $( "#box" ).slideUp();
-  }
-});
-</script>
-</body>
-
+    <footer class="section section-serenade conference-footer">
+      <div class="container text-center">
+        <h2 class="conference-main-title">The Conference</h2>
+        <ul class="pe-social">
+          <li><a href="#0"><i class="pe-7s-mail pe-va"></i></a></li>
+          <li><a href="#0"><i class="pe-so-facebook pe-bg pe-bg-cl"></i></a></li>
+          <li><a href="#0"><i class="pe-so-twitter pe-bg pe-bg-cl"></i></a></li>
+        </ul><a href="#0" class="btn btn-lg mt-30 mb-30">Register Today</a>
+        <p class="italic font12">Copyright © 2015 Pixeden. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+      var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
+      peLoader.init({
+          loader: '#loading',
+          removeTime: 700
+      });
+      
+    </script>
+ 
+    <!-- Libs scripts-->
+    <script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="libs/prism/prism.js"></script>
+    <script type="text/javascript" src="js/fontsmoothie.min.js"></script>
+    <!-- Pe Plugins-->
+    <script type="text/javascript" src="js/pe-slider.2.js"></script>
+    <script type="text/javascript" src="js/pe-scrollchange.min.js"></script>
+    <script type="text/javascript" src="js/pe-navscroll.js"></script>
+    <script type="text/javascript" src="js/pe-bg.js"></script>
+    <script type="text/javascript" src="js/pe-svgttern.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script>  -->
+    <script>
+      $(document).ready(function(){
+      
+        // Pe Background
+        var bgs = new peBg();
+        bgs.init({
+          parallax: false,
+          fixed: true
+        });
+      
+        peNavScroll.init({
+          nav:'.navbar',
+          class:'active',
+          duration: 500,
+          noMenu: true,
+          allLinks: true,
+          easingFunction: easing.easeInOutCubic
+        });
+      
+        peScrollChange.init({
+          elem: '.navbar',
+          trigger: document.querySelector('.fixed-nav-start').offsetHeight,
+          classesToChange: 'nav-bg'
+        });
+      
+        peScrollChange.init({
+          elem: '.nav',
+          trigger: document.querySelector('.fixed-nav-start').offsetHeight,
+          classesToChange: 'margin-top-35',
+          removeClass: true
+        });
+      
+        // Mobile Navigation
+        $('.nav-btn').click(function(){
+          $(this).toggleClass('x');
+          $('.navbar').toggleClass('navbar--open');
+        })
+      
+      
+      }) // Ready
+      
+          
+    </script>
+  </body>
 </html>
