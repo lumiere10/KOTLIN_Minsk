@@ -294,9 +294,10 @@ text-align:center;
 }
 
 .timeline-featured .timeline-content {
-  background-color: #2f2f2f;
-  color: white;
-  padding: 10px 20px 30px 20px;
+ background-color: #fff;
+color: black;
+padding: 10px 20px 30px 20px;
+border: 1px solid;
 }
 .timeline-featured .timeline-content:after {
   color: #464646;
