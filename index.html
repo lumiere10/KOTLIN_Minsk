@@ -14,6 +14,39 @@
     <link rel="stylesheet" href="fonts/pe-icon-social/css/social-style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    
+
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
+    <script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.js"></script>
+
+    
+    <link rel="stylesheet" href="js/fm.revealator.jquery.min.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/stickUp.min.js"></script>
+ <script type="text/javascript">
+      jQuery(function($) {
+        $(document).ready( function() {
+          $('.navbar-wrapper').stickUp({
+                        parts: {
+                                  0:'home',
+                                  1:'about',
+                                  2:'speakers',
+                                  3:'schedule',
+                                  4:'sponsors',
+                                  5:'contacts'
+                                },
+                                itemClass: 'menuItem',
+                                itemHover: 'active',
+                                topMargin: 'auto'
+                              
+                              });
+                });
+              });
+            
+            </script>
+
   </head>
   <body>
     <div id="loading">
@@ -22,21 +55,22 @@
       </svg>
     </div>
     <header id="home" class="section-terracotta conference-showcase fixed-nav-start section pt0 pb0">
-      <section  class="sTop section section-background conference-showcase max-width-1600">
+      
         <nav class="navbar navbar-fixed-top">
           <div class="container-fluid">
-            <ul class="nav nav-pills pull-right conference-navigation margin-top-35">
-              <li role="presentation" class="active"><a href="#home">Home</a></li>
-              <li role="presentation"><a href="#about">about</a></li>
-              <li role="presentation"><a href="#speakers">Speakers</a></li>
-              <li role="presentation"><a href="#schedule">schedule</a></li>
-              <li role="presentation"><a href="#sponsors">Sponsors</a></li>
-              <li role="presentation"><a href="#contacts">contacts</a></li>
+            <ul class="nav navbar-wrapper nav-pills pull-right conference-navigation margin-top-15">
+              <li role="presentation" class="menuItem active"><a href="#home">Home</a></li>
+              <li role="presentation"  class="menuItem"><a href="#about">about</a></li>
+              <li role="presentation"  class="menuItem"><a href="#speakers">Speakers</a></li>
+              <li role="presentation"  class="menuItem"><a href="#schedule">schedule</a></li>
+              <li role="presentation"  class="menuItem"><a href="#sponsors">Sponsors</a></li>
+              <li role="presentation"  class="menuItem"><a href="#contacts">contacts</a></li>
             </ul>
           </div>
         </nav>
         <button type="button" role="button" aria-label="Toggle Navigation" class="nav-btn"><span class="lines"></span></button>
-        <div class="container-fluid">
+        <section  class="sTop section section-background conference-showcase max-width-1600">
+        <div class="container">
           <div class="showcase-container">
             <div class="home_img " >
       <img src="images/logo.png" alt="logo"></div>
@@ -54,130 +88,168 @@
         </div>
       </section>
     </header>
-    <section id="about" class="section conference-intro">
+    <section id="about" class="revealator-slideup revealator-once section conference-intro">
       <div class="container text-center">
         <h3 class="conference-title">about</h3>
         <p class="compact">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies condimentum tristique. Sed quis urna velit. Aliquam suscipit dapibus molestie. Nam auctor, risus et varius dapibus, lorem leo dapibus nulla, id elementum tellus purus vitae augue.</p>
       </div>
     </section>
-    <section id="speakers" class="section conference-speakers text-center pt0">
+    <section id="speakers" class=" conference-speakers text-center pt0">
     	<h3 class="conference-title"><i class="pe-7s-micro"></i>speakers</h3>
-      <div class="chk-container">
-      	<div class="chk-container chk-serenade">
-        <div class="chk-item hover08"><img src="images/profile _1.jpg" alt="Leonid Starcev" class="chk-full"></div>
-        <div class="chk-item1">
-          <div class="checker-content">
-            <h3 class="conference-title">Leonid Starcev</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis consectetur nisi, ac placerat odio. Maecenas porta orci a lorem fermentum.</p>
-            <ul class="pe-social">
-              <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-        <div class="chk-container chk-serenade">
-          <div class="chk-item hover08"><img src="images/profile_2.png" alt="Ilmir Usmanov" class="chk-full"></div>
-          <div class="chk-item1">
-            <div class="checker-content">
-              <h3 class="conference-title">Ilmir Usmanov</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae metus ligula.
-                <ul class="pe-social">
-                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+      <div class="chk-container"><div class="row ">
+        <div class="col-md-4 col-sm-6 revealator-zoomin revealator-once">
+            <div class="our-team">
+                <div class="pic hover08">
+                  <img src="images/profile _1.jpg" alt="Leonid Starcev" class="chk-full">
+        
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-              </p>
+                <div class="team-content">
+                    <h3 class="title">Leonid Starcev</h3>
+                    <span class="post">web developer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="chk-container chk-serenade">
-          <div class="chk-item hover08"><img src="images/profile_3.jpg" alt="Marcin Moskala" class="chk-full"></div>
-          <div class="chk-item1">
-            <div class="checker-content">
-              <h3 class="conference-title">Marcin Moskala</h3>
-              <p>Aenean pharetra adipiscing sem non ornare. Duis at dui turpis. Quisque in accumsan.
-                <ul class="pe-social">
-                  <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
+        <div class="col-md-4 col-sm-6 revealator-zoomin revealator-once">
+            <div class="our-team">
+                <div class="pic hover08"><img src="images/profile_2.png" alt="Ilmir Usmanov" class="chk-full">
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-              </p>
+                <div class="team-content">
+                    <h3 class="title">Ilmir Usmanov</h3>
+                    <span class="post">Web Designer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="chk-container chk-inverse chk-serenade">
-          <div class="chk-item hover08"><img src="images/profile_4.jpg" alt="Marharyta Nedzelska" class="chk-full"></div>
-          <div class="chk-item1">
-            <div class="checker-content">
-              <h3 class="conference-title">Marharyta Nedzelska</h3>
-              <p>Phasellus rutrum est interdum tincidunt commodo. Donec vel dignissim orci.</p>
-              <ul class="pe-social">
-                <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
-              </ul>
+        <div class="col-md-4 col-sm-6 revealator-zoomin revealator-once">
+            <div class="our-team">
+                <div class="pic hover08"><img src="images/profile_3.jpg" alt="Marcin Moskala" class="chk-full">
+        
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <div class="team-content">
+                    <h3 class="title">Marcin Moskala</h3>
+                    <span class="post">web developer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
+                    </p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="chk-container chk-inverse chk-serenade">
-          <div class="chk-item hover08"><img src="images/profile_5.jpg" alt="Oleg Semen" class="chk-full"></div>
-          <div class="chk-item1">
-            <div class="checker-content">
-              <h3 class="conference-title">Oleg Semen</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris.</p>
-              <ul class="pe-social">
-                <li><a href="#0"><i class="pe-so-twitter pe-hover"></i></a></li>
-              </ul>
+        </div><div class="row margin-center">
+        <div class="col-md-4 col-sm-6 revealator-zoomin revealator-once">
+            <div class="our-team">
+                <div class="pic hover08"><img src="images/profile_4.jpg" alt="Marharyta Nedzelska" class="chk-full">
+        
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <div class="team-content">
+                    <h3 class="title">Marharyta Nedzelska</h3>
+                    <span class="post">web developer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
+                    </p>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
-        </ul><a href="https://forms.gle/9P2i3TJaJRNiEBve7" class="btn btn-lg mt-30 mb-30">Register Today</a>
+        <div class="col-md-4 col-sm-6 revealator-zoomin revealator-once">
+            <div class="our-team">
+                <div class="pic hover08"><img src="images/profile_5.jpg" alt="Oleg Semen" class="chk-full">
+        
+                </div>
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                <div class="team-content">
+                    <h3 class="title">Oleg Semen</h3>
+                    <span class="post">web developer</span>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
+                    </p>
+                </div>
+            </div>
+        </div></div>
+    </div>
+</div>     
+        
+<a href="https://forms.gle/9P2i3TJaJRNiEBve7" class="btn btn-lg mt-30 mb-30">Register Today</a>
     </section>
-    <section id="schedule" class="section conference-agenda">
+    <section id="schedule" class=" section conference-agenda">
       <div class="container text-center">
         <h3 class="conference-title"><i class="pe-7s-alarm"></i>schedule<span class="subtitle">Conference schedule</span></h3>
         <h2 class="conference-title">Minsk • 07 september 2019<br>mesto</h2>
         <ul class="timeline">
           <li><span class="timeline-time">8:00 AM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Check In</h4>
             </div>
           </li>
           <li><span class="timeline-time">8:30 AM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Breakfast / Coffee</h4>
             </div>
           </li>
           <li><span class="timeline-time">9:00AM - 12:00 AM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Pre-Conference Trainings</h4>
             </div>
           </li>
           <li><span class="timeline-time">12:30 PM - 1:30 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Lunch</h4>
             </div>
           </li>
           <li><span class="timeline-time">1:30 PM - 5:30 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Pre-Conference Trainings</h4>
             </div>
           </li>
           <li><span class="timeline-time">5:00 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>City tour & Activities</h4>
             </div>
           </li>
           <li class="timeline-featured"><span class="timeline-time">6:00 PM - 9:00 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4><i class="pe-7s-id pe-va"></i>The Conference talks</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac magna mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
           </li>
           <li><span class="timeline-time">9:00 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Welcome Dinner</h4>
             </div>
           </li>
           <li><span class="timeline-time">7:30 PM - 9:00 PM</span>
-            <div class="timeline-content">
+            <div class="timeline-content revealator-slideleft revealator-once">
               <h4>Sponsors Reception</h4>
             </div>
           </li>
@@ -190,15 +262,15 @@
       <div class="container text-center">
         <h3 class="conference-title"><i class="pe-7s-ribbon"></i>Sponsors<span class="subtitle">The Conference Partners</span></h3>
            <div class="link-sponsors">
-           	<a href="google.com"><img src="images/bkug.png" alt="logo" class="img-responsive margin-center"></a>
-           	<a href="google.com"><img src="images/gdg.jpg" alt="logo" class="img-responsive margin-center"></a>
+           	<a href="google.com"><img src="images/bkug.png" alt="logo" class="revealator-slideup revealator-once img-responsive margin-center"></a>
+           	<a href="google.com"><img src="images/gdg.jpg" alt="logo" class="img-responsive revealator-slideup revealator-once margin-center"></a>
  </div>
       </div>
     </section>
-    <header id="contacts" class="section conference-venue section-background pe-fixed">
+    <section id="contacts" class=" section conference-venue section-background pe-fixed">
       <div class="container">
         <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center row-contact">
+        <div class="col-md-6 col-md-offset-3 text-center row-contact revealator-zoomin revealator-once">
 									<div class="col-md-6 contact-img">
 											<img src="images/profile _1.jpg" alt="">
 										</div>
@@ -218,7 +290,7 @@
 											</ul>
 										</div>
 </div>
-	<div class="col-md-6 col-md-offset-3 text-center row-contact">
+	<div class="col-md-6 col-md-offset-3 text-center row-contact revealator-zoomin revealator-once">
 									<div class="col-md-6 contact-img">
 											<img src="images/profile _1.jpg" alt="">
 										</div>
@@ -242,7 +314,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <footer class="section section-serenade conference-footer">
       <div class="container text-center">
@@ -254,69 +326,26 @@
         <p class="italic font12">Copyright © 2019</p>
       </div>
     </footer>
+    
     <script>
       var peLoader=function(){var e=function(e){config={loader:"#loading",removeTime:700};for(var o in e)e.hasOwnProperty(o)&&(config[o]=e[o]);var n,i=document.querySelector(config.loader),t=function(e){e.classList.add("loaded"),setTimeout(function(){document.body.removeChild(e)},config.removeTime)},r=function(){n=setTimeout(t(i),2e3)};i&&(window.addEventListener("load",r),i.addEventListener("click",function(){clearTimeout(n),t(i)}))};return{init:e}}();
       peLoader.init({
           loader: '#loading',
           removeTime: 700
       });
+
+     
       
     </script>
  
     <!-- Libs scripts-->
-    <script type="text/javascript" src="libs/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="libs/prism/prism.js"></script>
-    <script type="text/javascript" src="js/fontsmoothie.min.js"></script>
+    
     <!-- Pe Plugins-->
-    <script type="text/javascript" src="js/pe-slider.2.js"></script>
+   
     <script type="text/javascript" src="js/pe-scrollchange.min.js"></script>
     <script type="text/javascript" src="js/pe-navscroll.js"></script>
-    <script type="text/javascript" src="js/pe-bg.js"></script>
-    <script type="text/javascript" src="js/pe-svgttern.js"></script>
+    
     <!-- <script type="text/javascript" src="assets/js/main.js"></script>  -->
-    <script>
-      $(document).ready(function(){
-      
-        // Pe Background
-        var bgs = new peBg();
-        bgs.init({
-          parallax: false,
-          fixed: true
-        });
-      
-        peNavScroll.init({
-          nav:'.navbar',
-          class:'active',
-          duration: 500,
-          noMenu: true,
-          allLinks: true,
-          easingFunction: easing.easeInOutCubic
-        });
-      
-        peScrollChange.init({
-          elem: '.navbar',
-          trigger: document.querySelector('.fixed-nav-start').offsetHeight,
-          classesToChange: 'nav-bg'
-        });
-      
-        peScrollChange.init({
-          elem: '.nav',
-          trigger: document.querySelector('.fixed-nav-start').offsetHeight,
-          classesToChange: 'margin-top-35',
-          removeClass: true
-        });
-      
-        // Mobile Navigation
-        $('.nav-btn').click(function(){
-          $(this).toggleClass('x');
-          $('.navbar').toggleClass('navbar--open');
-        })
-      
-      
-      }) // Ready
-      
-          
-    </script>
+   
   </body>
 </html>

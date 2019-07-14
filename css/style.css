@@ -2933,13 +2933,16 @@ display: block;
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-}
 
+}
+.our-team .pic:hover {
+  border-radius: 6px;
+
+}
 
 .hover08  img:hover {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
-
   border-radius: 0%;
 
 }
@@ -3258,7 +3261,7 @@ line-height: 1.3;
 .conference-navigation > li:hover > a, .conference-navigation > li.active > a, .conference-navigation > li.active > a:hover, .conference-navigation > li.active > a:focus {
   color: currentColor;
   background-color: transparent;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #000;
   border-radius: 0;
 }
 .conference-navigation > li > a:focus {
@@ -3268,9 +3271,17 @@ line-height: 1.3;
   border-radius: 0;
 }
 
+.isStuck.margin-top-15 {
+    margin-top: 3px !important;
+    text-align: right;
+    float: left !important;
+    margin-left: 55%;
+}
+
 .navbar {
   -webkit-transition: .3s;
           transition: .3s;
+              background: #e8f4ff9e;
 }
 @media (min-width: 768px) {
   .navbar.nav-bg {
