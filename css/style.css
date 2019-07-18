@@ -3685,7 +3685,7 @@ section .full-width .row {
             flex: 1 0 100%;
   }
 }
-@media (max-width: 480px) {
+@media only screen and  (max-device-width : 480px){
   .chk-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 100%;
