@@ -3692,8 +3692,9 @@ section .full-width .row {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
   }
+section.section {
+    height: 100vh;}
 
-  
  .navbar-header{ 
     width: 100%;
 }

@@ -79,56 +79,42 @@ width: 50px;
 /* SECTIONS */
 
 /*HOME*/
-
 body{width: 100vw;}
-
-  .navbar-wrapper{  z-index: 100000;
-    width: 100%;
-}
-
+.navbar-wrapper{  z-index: 100000;
+ width: 100%;}
 .navbar-inverse {
     border-color: #e8f4ff9e;
     background: #e8f4ff9e;
     width: 100%;
 }
-
 .sTop {
 padding-bottom: 20px;   
 }
-
 .sTop .home_img{
 display: inline-block;
-
 width: 41%;
-
 text-align: center;
 }
-
-
 .sTop .home_img img {
     min-width: 127%;
     margin-left: -15%;
 }
-
 .sTop .home_text {
         vertical-align: middle;
     display: inline-block;
     margin: 0;
     text-align: center;
     }
-
 .sTop .home_text .home_header {
     font-size: 5rem;
       margin-bottom: 18px;}
 
-    .sTop .home_text .home_desc {
+.sTop .home_text .home_desc {
     font-size: 2.8rem;
     text-align: center; }
 
-    .sTop .home_text .home_header .bold {
-
-
-    font-family:gotham-bl ;}
+.sTop .home_text .home_header .bold {
+		font-family:gotham-bl;}
 
  .sTop .home_img_partners  {
     text-align: center;
