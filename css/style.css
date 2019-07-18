@@ -3696,8 +3696,30 @@ section.sTop {
     min-height: 100vh;
 }
 
- .navbar-header{ 
-    width: 100%;
+.navbar-header{
+	width:100%;
+}
+
+section .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 1%;
+    border-radius: 6px;
+}
+
+section.sTop .home_img_partners {
+    text-align: center;
+    margin-top: 1%;
+}
+
+section.sTop .home_text .home_desc {
+    font-size: 3rem;
+    text-align: center;
+}
+p {
+    margin: 0 0 10px;
+    font-size: 1.7rem;
 }
 
   section.sTop .container div.home_img {
@@ -3714,8 +3736,8 @@ section.sTop .container div.home_img img {
 }
 
 section.sTop .container div.home_text .home_header {
-    font-size: 4rem;
-    margin-bottom: 18px;
+  font-size: 3.5rem;
+    margin-bottom: 14px;
 }
 
 section.sTop .container div.home_text {
