@@ -3696,8 +3696,8 @@ section.sTop {
     min-height: 100vh;
 }
 
-.navbar-header{
-	width:100%;
+.navbar-header, body, html{
+	width:100vw;
 }
 
 section .btn-lg {
