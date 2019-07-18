@@ -3718,9 +3718,22 @@ section.sTop .home_text .home_desc {
     text-align: center;
 }
 p {
-    margin: 0 0 10px;
-    font-size: 1.7rem;
+    font-size: 2rem !important;
 }
+
+.timeline-content h4 {
+    font-size: 1.8rem !important;
+}
+
+h3.conference-title {
+    font-size: 5rem  !important;
+}
+
+.our-team .title {
+    font-size: 2.5rem;}
+
+    .our-team .post {
+    font-size: 1.7rem;}
 
   section.sTop .container div.home_img {
     display: contents;
@@ -3781,16 +3794,16 @@ section.sTop .container div.home_text {
 }
 
 .h1, h1 {
-    font-size: 2.2rem;
+    font-size: 2.2rem !important;
 }
 
 .contact-info p {
     color: #dedada;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     font-weight: 300;}
 
     .contact-info h6 {
-    font-size: 1.4rem;}
+    font-size: 1.4rem !important;}
 
 }
 @media (max-width: 1200px) {
@@ -3836,6 +3849,24 @@ section.sTop .container div.home_text {
     background-image: none;
   }
 
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #e0d876;
+    width: 100%;
+    height: 100vh;
+    background: #e0d876;
+}
+
+
+.navbar-inverse .navbar-nav a {
+    font-size: 5rem; 
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+    border: 1px solid #000;
+    font-weight: 700;
+    background: transparent;
+    /* font-size: 5rem; */
+}
   .conference-showcase {
     min-height: 100%;
     background-image: none;
