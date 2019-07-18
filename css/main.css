@@ -80,6 +80,8 @@ width: 50px;
 
 /*HOME*/
 
+body{width: 100vw;}
+
   .navbar-wrapper{  z-index: 100000;
     width: 100%;
 }
