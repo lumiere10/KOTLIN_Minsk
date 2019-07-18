@@ -3708,29 +3708,40 @@ section .btn-lg {
     border-radius: 6px;
 }
 
+div.our-team .pic {
+    width: 100%;
+    height: 100%;}
+
 section.sTop .home_img_partners {
     text-align: center;
     margin-top: 1%;
 }
 
 section.sTop .home_text .home_desc {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
+
+div.our-team .social {
+    top: 3%;
+    left: 77%;}
+
 p {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
 .timeline-content h4 {
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
 }
 
 h3.conference-title {
-    font-size: 5rem  !important;
+    font-size: 3rem  !important;
 }
 
+p.compact{    width: 100%;}
+
 .our-team .title {
-    font-size: 2.5rem;}
+    font-size: 2rem;}
 
     .our-team .post {
     font-size: 1.7rem;}
@@ -3784,13 +3795,13 @@ section.sTop .container div.home_text {
     margin: 0 auto;
     text-align: center;
     float: none;
-    display: flex;
 }
 
-#contacts  .col-xs-6 {
-    width: 46%;
+#contacts  .col-xs-12 {
+    width: 100%;
     margin: 0 auto;
     text-align: center !important;
+    margin-bottom:10px;
 }
 
 .h1, h1 {
@@ -3849,16 +3860,26 @@ section.sTop .container div.home_text {
     background-image: none;
   }
 
+ #home div.navbar-inverse div.navbar-collapse ul.navbar-nav {
+    float: left;
+    margin: 0;
+    padding: 20px;
+}
+
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #e0d876;
+    border-color: #e8f4ff9e;
     width: 100%;
-    height: 100vh;
-    background: #e0d876;
+        height: 100vh;
+    z-index: 10000000;
+    max-height: 1000vh;
+    background: #e8f4ff9e;
 }
 
 
 .navbar-inverse .navbar-nav a {
     font-size: 5rem; 
+
+    padding: 25px 10px;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
