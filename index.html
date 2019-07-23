@@ -106,7 +106,7 @@
     <img src="images/gdg.jpg" alt="logo"></div>
      <a href="https://forms.gle/9P2i3TJaJRNiEBve7" class="btn btn-lg mt-30 mb-30">Register Today</a>
     </div>
-      <p><a href="#about" class="intLink"><img src="images/tild3936-3066-4732-b934-333463373063__gdg.svg" alt="logo"></a></p>
+      <p><a href="#about" class="intLink"><span></span></a></p>
   </div>
           </div>
         </div>
@@ -353,7 +353,12 @@
           removeTime: 700
       });
 
-     
+     $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
       
     </script>
  
