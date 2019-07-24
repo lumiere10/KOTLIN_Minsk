@@ -3739,7 +3739,7 @@ section.sTop .home_text .home_desc {
 }
 
 div.our-team .social {
-    top: 3%;
+    top: 1%;
     left: 77%;}
 
 p {
@@ -3771,7 +3771,7 @@ p.compact{    width: 100%;}
 section.sTop .container div.home_img img {
     max-width: 36%;
     vertical-align: top;
-    margin-left: -8%;
+    margin-left: 0%;
         min-width: 10px;
 }
 
@@ -3882,14 +3882,6 @@ section.sTop .container div.home_text {
     padding: 20px;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #e8f4ff9e;
-    width: 100%;
-        height: 100vh;
-    z-index: 10000000;
-    max-height: 1000vh;
-    background: #e8f4ff9e;
-}
 
 
 .navbar-inverse .navbar-nav a {
@@ -3898,12 +3890,6 @@ section.sTop .container div.home_text {
     padding: 25px 10px;
 }
 
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
-    border: 1px solid #000;
-    font-weight: 700;
-    background: transparent;
-    /* font-size: 5rem; */
-}
   .conference-showcase {
     min-height: 100%;
     background-image: none;

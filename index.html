@@ -50,7 +50,6 @@
               });
             
 
-
             </script>
 
 
@@ -64,34 +63,34 @@
 
 <div id="home" >
       
-     <div class="navbar-wrapper">
+     <div class="top navbar-wrapper">
       
-      <div class="navwrapper">
+      <div class="navwrapper ">
         <div class="navbar navbar-inverse navbar-static-top">
          
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse">
+           <span class="hamburger hamburger--collapse " id="js-navbar-toggle">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </span>  
+            <div class="navbar__menu  ">
               <ul class="nav navbar-nav">
-                <li role="presentation" class="menuItem active"><a href="#home">Home</a></li>
-              <li role="presentation"  class="menuItem"><a href="#about">about</a></li>
-              <li role="presentation"  class="menuItem"><a href="#speakers">Speakers</a></li>
-              <li role="presentation"  class="menuItem"><a href="#schedule">schedule</a></li>
-              <li role="presentation"  class="menuItem"><a href="#sponsors">Sponsors</a></li>
-              <li role="presentation"  class="menuItem"><a href="#contacts">contacts</a></li>
+                <li  class="navbar__item navbar__link menuItem active"><a href="#home">Home</a></li>
+              <li class="navbar__item navbar__link menuItem"><a href="#about">about</a></li>
+              <li   class="navbar__item navbar__link menuItem"><a href="#speakers">Speakers</a></li>
+              <li   class="navbar__item navbar__link menuItem"><a href="#schedule">schedule</a></li>
+              <li   class="navbar__item navbar__link menuItem"><a href="#sponsors">Sponsors</a></li>
+              <li   class="navbar__item navbar__link menuItem"><a href="#contacts">contacts</a></li>
               </ul>
             </div>
         
+
         
       </div><!-- End Navbar -->
       
       </div>
     </div> <!-- END NAVBAR --></div>
+    <div class="wrapper">
         <section  class="sTop section section-background conference-showcase max-width-1600">
         <div class="container">
           <div class="showcase-container">
@@ -109,7 +108,7 @@
       <p><a href="#about" class="intLink"><span></span></a></p>
   </div>
           </div>
-        </div>
+
       </section>
     <section id="about" class="revealator-slideup revealator-once section conference-intro">
       <div class="container text-center">
@@ -334,7 +333,7 @@
         </div>
       </div>
     </section>
-
+</div>
     <footer class="section section-serenade conference-footer">
       <div class="container text-center">
         <h2 class="conference-main-title">The Conference</h2>
@@ -359,7 +358,30 @@
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 });
-      
+
+   /*------------------------------
+Mobile Menu (toggleClass to activate transitions)
+------------------------------*/
+
+$( ".hamburger" ).click(function() {
+    $(".hamburger").toggleClass("is-active");
+    $( ".navbar__menu" ).toggleClass( "navbar__menu--active" );
+    $(".top").toggleClass("top--open");
+});
+
+/*------------------------------
+".Top" Color (if scroll >= 60)
+------------------------------*/ 
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 60) {
+        $(".top").addClass("top--scrolling");
+    } else {
+        $(".top").removeClass("top--scrolling");
+    }
+});
+
     </script>
  
     <!-- Libs scripts-->
