@@ -540,10 +540,7 @@ text-align:center;
     background-color: transparent;
     border: 0;
     margin: 0;
-    overflow: visible; 
-  max-width: 100%;
-    width: 100%;
-    text-align: center;}
+    overflow: visible; }
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
