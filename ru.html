@@ -50,7 +50,6 @@
               });
             
 
-
             </script>
 
 
@@ -74,39 +73,23 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </span>  
-            <div class=" navbar__menu  ">
-              <ul class="en nav navbar-nav">
-                <li  class="navbar__item navbar__link menuItem active"><a href="#home">Home</a></li>
-              <li class="navbar__item navbar__link menuItem"><a href="#about">about</a></li>
-              <li   class="navbar__item navbar__link menuItem"><a href="#speakers">Speakers</a></li>
-              <li   class="navbar__item navbar__link menuItem"><a href="#schedule">schedule</a></li>
-              <li   class="navbar__item navbar__link menuItem"><a href="#sponsors">Sponsors</a></li>
-              <li   class="navbar__item navbar__link menuItem"><a href="#contacts">contacts</a></li>
-            
-              </ul>
-
-                 <ul class="ru  nav navbar-nav">
+            <div class="navbar__menu  ">
+              <ul class="nav navbar-nav">
                 <li  class="navbar__item navbar__link menuItem active"><a href="#home">Главная</a></li>
               <li class="navbar__item navbar__link menuItem"><a href="#about">О конференции</a></li>
               <li   class="navbar__item navbar__link menuItem"><a href="#speakers">Выступающие</a></li>
               <li   class="navbar__item navbar__link menuItem"><a href="#schedule">Рпсписание</a></li>
               <li   class="navbar__item navbar__link menuItem"><a href="#sponsors">Спонсоры</a></li>
               <li   class="navbar__item navbar__link menuItem"><a href="#contacts">Контакты</a></li>
-            
               </ul>
-                
             </div>
         
 
-        <div class="langbts">
-<button class="enbt active">en</button>
-<button class="jpbt">ru</button>
-</div>
+        
       </div><!-- End Navbar -->
       
       </div>
-    </div> <!-- END NAVBAR -->
-  </div>
+    </div> <!-- END NAVBAR --></div>
     <div class="wrapper">
         <section  class="sTop section section-background conference-showcase max-width-1600">
         <div class="container">
@@ -115,17 +98,12 @@
       <img src="images/logo.png" alt="logo"></div>
 
     <div class="home_text ">
-      <div class="home_header en"><span class="bold">KOTLIN / Everywhere</span> Minsk</div>
-
-      <div class="home_header ru"><span class="bold">KOTLIN / Everywhere</span> Минск</div>
-      <div class="home_desc en"><span class="yellow">7 september</span> 2019  Minsk</div>
-      <div class="home_desc ru"><span class="yellow">7 сентября</span> 2019  Минск</div>
+      <div class="home_header"><span class="bold">KOTLIN / Everywhere</span> Minsk</div>
+      <div class="home_desc"><span class="yellow">7 september</span> 2019  Minsk</div>
       <div class="home_img_partners" >
       <img src="images/bkug.png" alt="logo">
     <img src="images/gdg.jpg" alt="logo"></div>
-     <a href="https://forms.gle/9P2i3TJaJRNiEBve7" class="btn btn-lg mt-30 mb-30 en">Register Today</a>
-     <a href="https://forms.gle/9P2i3TJaJRNiEBve7 " class="btn btn-lg mt-30 mb-30 ru">Зарегистрироваться</a>
-    
+     <a href="https://forms.gle/9P2i3TJaJRNiEBve7" class="btn btn-lg mt-30 mb-30">Register Today</a>
     </div>
       <p><a href="#about" class="intLink"><span></span></a></p>
   </div>
@@ -133,18 +111,13 @@
 
       </section>
     <section id="about" class="revealator-slideup revealator-once section conference-intro">
-      <div class="container text-center en">
+      <div class="container text-center">
         <h3 class="conference-title">about</h3>
         <p class="compact">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies condimentum tristique. Sed quis urna velit. Aliquam suscipit dapibus molestie. Nam auctor, risus et varius dapibus, lorem leo dapibus nulla, id elementum tellus purus vitae augue.</p>
       </div>
-      <div class="container text-center ru">
-        <h3 class="conference-title">О нас</h3>
-        <p class="compact">Описание</p>
-      </div>
     </section>
     <section id="speakers" class="section conference-speakers text-center pt0">
-    	<h3 class="conference-title en"><i class="pe-7s-micro"></i>speakers</h3>
-    	<h3 class="conference-title ru"><i class="pe-7s-micro"></i>Ораторы</h3>
+    	<h3 class="conference-title"><i class="pe-7s-micro"></i>speakers</h3>
       <div class="chk-container"><div class="row container ">
         <div class="col-md-4  col-xs-6 col-sm-6 revealator-zoomin revealator-once">
             <div class="our-team">
@@ -158,14 +131,7 @@
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
-                <div class="team-content en">
-                    <h3 class="title">Leonid Starcev</h3>
-                    <span class="post">web developer</span>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar feugiat fermentum. Donec efficitur posuere eros, vitae placerat.
-                    </p>
-                </div>
-                <div class="team-content ru">
+                <div class="team-content">
                     <h3 class="title">Leonid Starcev</h3>
                     <span class="post">web developer</span>
                     <p class="description">
@@ -416,20 +382,6 @@ $(window).scroll(function() {
     }
 });
 
-
-
-            $(".jpbt").click(function(){
-  $('.en').hide(400);
-  $('.ru').show(500);
-   $(".jpbt").addClass("active");
-    $(".enbt").removeClass("active")
-});
-$(".enbt").click(function(){
-  $('.en').show(500);
-  $('.ru').hide(400);
-  $(".jpbt").removeClass("active")
-   $(".enbt").addClass("active");
-});
     </script>
  
     <!-- Libs scripts-->

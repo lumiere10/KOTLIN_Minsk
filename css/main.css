@@ -146,6 +146,7 @@ padding: 0px 6px;
 	 background: #c2c2c2;
 }
 
+.lang_ru{}
 
 
 /*HOME*/
@@ -528,8 +529,7 @@ text-align:center;
 
 
  .hamburger {
-    padding: 5px 0;
-    display: inline-block;
+        display: block;
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
@@ -539,8 +539,11 @@ text-align:center;
     text-transform: none;
     background-color: transparent;
     border: 0;
-    margin: 0;
-    overflow: visible; }
+    overflow: visible;
+    margin: auto;
+    height: 50%;
+    margin-left: 0;
+} }
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
@@ -548,10 +551,11 @@ text-align:center;
   
   .hamburger-box {
     width: 40px;
-    height: 24px;
+    height: 100%;
     display: inline-block;
-    position: relative; }
-  
+    position: relative;
+    margin: auto auto;
+}
   .hamburger-inner {
     display: block;
     top: 50%;
@@ -699,4 +703,36 @@ Tablet & Desktop
         display: none;
         padding: 5px auto;
     }
+}
+
+/*button language*/
+.langbts .active{
+	color:red;
+ font-weight:600;}
+.ru{
+  display:none;
+}
+
+.langbts {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 0;
+    height: inherit;
+}
+.langbts>button {
+    background: transparent;
+    color: #332f2f;
+    border: none;
+    border-radius: 0;
+    padding: 5px;
+    transition: all ease-in-out .2s;
+}
+
+.langbts>button:first-of-type:hover{
+  font-weight:600;
+}
+
+.langbts>button:last-of-type:hover{
+  font-weight:600;
 }
